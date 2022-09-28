@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
 
-:root{
-  --font-primary: 'Ropa Sans', sans serif;
+:root {
+  --font-primary: "Ropa Sans", sans serif;
   --color-primary: #777777;
-  --color-secondary: #AAAAAA;
-  --color-third: #EEEEEE;
+  --color-secondary: #aaaaaa;
+  --color-third: #eeeeee;
 }
 
-*{
+* {
   margin: 0 auto;
   padding: 0;
   border: none;
 }
 
-body{
+body {
   font-family: var(--font-primary);
   width: 697px;
   height: 1267px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /*Cabeçalho Site*/
-header{
+header {
   width: 697px;
   height: 49px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
-.logo-title{
+.logo-title {
   display: flex;
   margin-left: 3.5rem;
 }
 
-.logo-title h1{
+.logo-title h1 {
   font-weight: 400;
   font-size: 30px;
   line-height: 32px;
@@ -51,30 +51,30 @@ header{
   color: var(--color-secondary);
 }
 
-.menu-hamburguer{
+.menu-hamburguer {
   cursor: pointer;
   margin-right: 3.5rem;
 }
 
 /*Menu inicial*/
-.menu-lateral{
+.menu-lateral {
   display: flex;
   margin-top: 20px;
   margin-left: 44px;
   margin-right: 45px;
 }
 
-.menu-lateral .images{
+.menu-lateral .images {
   width: 608px;
   height: 259px;
 }
 
-.image-principal{
+.image-principal {
   position: absolute;
   z-index: -2;
 }
 
-.setas{
+.setas {
   width: 100%;
   height: 100%;
   display: flex;
@@ -82,7 +82,7 @@ header{
   align-items: center;
 }
 
-.seta-esquerda{
+.seta-esquerda {
   width: 39px;
   height: 39px;
   border-radius: 50%;
@@ -95,12 +95,12 @@ header{
   transition: 0.5s;
 }
 
-.seta-esquerda img{
+.seta-esquerda img {
   width: 10px;
   height: 18px;
 }
 
-.seta-direita{
+.seta-direita {
   width: 39px;
   height: 39px;
   border-radius: 50%;
@@ -113,66 +113,66 @@ header{
   transition: 0.5s;
 }
 
-.seta-direita:hover{
+.seta-direita:hover {
   background: rgba(179, 179, 179, 0.62);
 }
 
-.seta-esquerda:hover{
+.seta-esquerda:hover {
   background: rgba(179, 179, 179, 0.62);
 }
 
-.seta-direita img{
+.seta-direita img {
   width: 10px;
   height: 18px;
 }
 
 /*House - Sale*/
-.houses-sale{
+.houses-sale {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sales-card{
+.sales-card {
   width: 256px;
   height: 242px;
 }
 
-.sale-image img{
+.sale-image img {
   width: 100%;
   height: 144px;
   display: block;
 }
 
-.sales-info{
+.sales-info {
   background-color: var(--color-third);
-  padding: 0px 13px 12px 13px; 
+  padding: 0px 13px 12px 13px;
 }
 
-.sales-header{
+.sales-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.sales-header h2{
+.sales-header h2 {
   margin-right: 3rem;
   color: var(--color-secondary);
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
-.sales-header h3{
+.sales-header h3 {
   color: white;
 }
 
-.sales-status1{
+.sales-status1 {
   width: 56px;
   height: 21px;
   margin-left: 4rem;
-  background-color: #51D275;
+  background-color: #51d275;
   border-radius: 10.5px;
   display: flex;
   justify-content: center;
@@ -180,15 +180,15 @@ header{
   cursor: pointer;
 }
 
-.sales-status1:hover{
+.sales-status1:hover {
   background-color: #36d463;
 }
 
-.sales-status2{
+.sales-status2 {
   width: 56px;
   height: 21px;
   margin-left: 4rem;
-  background-color: #DC9730;
+  background-color: #dc9730;
   border-radius: 10.5px;
   display: flex;
   justify-content: center;
@@ -196,14 +196,52 @@ header{
   cursor: pointer;
 }
 
-.sales-status2:hover{
+.sales-status2:hover {
   background-color: #db901f;
 }
 
-.sales-info p{
+.sales-info p {
   font-size: 10px;
   line-height: 11px;
   text-align: justify;
   color: #555555;
 }
 
+.style {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.style h1{
+  margin-bottom: 13px;
+  color: var(--color-primary);
+  font-size: 25px;
+  line-height: 27px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+.style-text{
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 27px;
+}
+
+.style-image{
+  filter: opacity(60%);
+}
+
+.style-image:hover{
+  border: 1px solid black;
+}
